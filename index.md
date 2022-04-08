@@ -3,14 +3,14 @@
 - korean fried chicken
 - sushi (*uni*)
 - pad thai
+- takoyaki
 
 ![Image](https://imgur.com/hSdIfH1.jpg)
 
 [link](http://google.com)
 
 Horizontal rule:
-
----
+***
 
 ```
 # code block
