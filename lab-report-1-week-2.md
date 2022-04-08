@@ -1,1 +1,1 @@
-![Image](/Screenshot%202022-04-08%20131534.png)
+![Image](Screenshot%202022-04-08%20131534.png)
