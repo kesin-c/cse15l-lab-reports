@@ -26,3 +26,5 @@ hi im `Inline code`
 > 4. dog cams
 > 5. cat cams
 > 6. **CONSOLES**
+
+[Lab Report 1](lab-report-1-week-2.html)
