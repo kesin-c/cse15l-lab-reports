@@ -15,9 +15,24 @@ Now that you are connected to a remote computer, you can now run some commands o
 - `ls `: list the names of the files within the directory
 - `cat <filepath>` : output the content of the files
 - `mkdir` : create a new directory
+> If you try to access the directory which you have no permission for, it will deny your request. </br>
 ![Image](Screenshot%2022-04-18%221013.png)
 ***
 ## Moving Files with scp
+What you just did was all completed on one computer, now, we are going to move files between a remote and a local computers.
+First, create a file wiht the name `WhereAmI.java`, with the contents being: 
+> class WhereAmI { </br>
+>  public static void main(String[] args) {</br>
+>    System.out.println(System.getProperty("os.name"));</br>
+>    System.out.println(System.getProperty("user.name"));</br>
+>    System.out.println(System.getProperty("user.home"));</br>
+>    System.out.println(System.getProperty("user.dir"));</br> 
+}</br>
+> }
+
+After have the file saved, enter the command `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` from the directory the file is in, and remember to change `zzz` with your username. Then you should be asked for your password
+![Image](Screenshot%2022-04-18%222655.png)
+
 ***
 ## Setting an SSH Key
 ***
