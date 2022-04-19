@@ -21,9 +21,11 @@ Now that you are connected to a remote computer, you can now run some commands o
 - `ls `: list the names of the files within the directory
 - `cat <filepath>` : output the content of the files
 - `mkdir` : create a new directory
+
 > If you try to access the directory which you have no permission for, it will deny your request. 
 >
 >![Image](Screenshot%202022-04-18%20221013.png)
+
 ***
 ## Moving Files with scp
 <p>What you just did was all completed on one computer, now, we are going to move files between a remote and a local computers.
@@ -76,7 +78,7 @@ SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0
 |             ..  |   
 +----[SHA256]-----+   
 
-It means that now you have both the publich and private keys stored in the .ssh directory.
+It means that now you have both the publich and private keys stored in the .ssh directory, and we would copy the public key to the .ssh directory.
 
 ***
 ## Optimizing Remote Running
