@@ -1,3 +1,5 @@
+# Lab Report 1
+
 ## Installing VScode
 To download VScode, you would need to go to their [website](https://code.visualstudio.com/download) where you would choose one to download based on the operating system of your computer. After it is downloaded, run the installer and follow the steps on it, you should be set when the process is over.
 
