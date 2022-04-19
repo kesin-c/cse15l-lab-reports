@@ -31,14 +31,16 @@ Now that you are connected to a remote computer, you can now run some commands o
 <p>What you just did was all completed on one computer, now, we are going to move files between a remote and a local computers.
 First, create a file wiht the name `WhereAmI.java`, with the contents being: </p>
 
-> class WhereAmI {  
->  public static void main(String[] args) {    
->    System.out.println(System.getProperty("os.name"));    
->    System.out.println(System.getProperty("user.name"));   
->    System.out.println(System.getProperty("user.home"));   
->    System.out.println(System.getProperty("user.dir"));   
->}   
-> }
+```
+class WhereAmI {  
+  public static void main(String[] args) {    
+    System.out.println(System.getProperty("os.name"));    
+    System.out.println(System.getProperty("user.name"));   
+    System.out.println(System.getProperty("user.home"));   
+    System.out.println(System.getProperty("user.dir"));   
+    }   
+}
+```
 
 <p>After have the file saved, enter the command `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` from the directory the file is in, and remember to change `zzz` with your username. Then you would be asked for your password to log into the remote computer. If every step is completed successfully, you should see the file in the directory with `ls` command and run the file with `java` or `javac` commands like the image below shown.</p>
 
@@ -49,26 +51,29 @@ First, create a file wiht the name `WhereAmI.java`, with the contents being: </p
 <p>Having to retype your password everytime you log in is ineffcient and annoying, so we would make the system to "remember you".
 First, enter the command `ssh-keygen` in the terminal, you should get something similar like this: </p>
 
-> Generating public/private rsa key pair.  
->Enter file in which to save the key   
-> (/Users/user-name/.ssh/id_rsa): /Users/user-name/.ssh/id_rsa   
->Enter passphrase (empty for no passphrase): 
+```
+Generating public/private rsa key pair.  
+Enter file in which to save the key   
+(/Users/user-name/.ssh/id_rsa): /Users/user-name/.ssh/id_rsa   
+Enter passphrase (empty for no passphrase): 
+```
 
 <p>Then just hit the enter key, you should get something like this: </p>
 
->Enter same passphrase again: 
->Your identification has been saved in /Users/user-name/.ssh/id_rsa.   
->
->Your public key has been saved in /Users/user-name/.ssh/id_rsa.pub.
->
->The key fingerprint is:   
+```
+Enter same passphrase again: 
+Your identification has been saved in /Users/user-name/.ssh/id_rsa.   
+
+Your public key has been saved in /Users/user-name/.ssh/id_rsa.pub.
+
+The key fingerprint is:   
 SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0    
 user-name@system.local  
->
->The key's randomart image is:  
+
+The key's randomart image is:  
 +---[RSA 3072]----+   
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   
-|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . + .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   
+|                 |   
+|       . . + .   |   
 |      . . B o .  |   
 |     . . B * +.. |   
 |      o S = *.B. |   
@@ -77,10 +82,14 @@ user-name@system.local
 |           +.+.o |   
 |             ..  |   
 +----[SHA256]-----+   
+```
 
-It means that now you have both the publich and private keys stored in the .ssh directory, and we would copy the public key to the .ssh directory.
+It means that now you have both the publich and private keys stored in the .ssh directory, and we would copy the public key to the directory. Enter `ssh cs15lsp22zz@ieng6.ucsd.edu`(replaced zzz with your username), enter the password, enter `mkdir .ssh`, then log off the server. Now whenever you try to login, you don't have to type your password anymore. 
+
+>No longer need the password!   
+>
+>![Image](Screenshot%202022-04-18%20231214.png)
 
 ***
 ## Optimizing Remote Running
 
-![Image](Screenshot%202022-04-08%20131534.png)
