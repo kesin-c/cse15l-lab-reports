@@ -30,11 +30,43 @@ First, create a file wiht the name `WhereAmI.java`, with the contents being:
 }</br>
 > }
 
-After have the file saved, enter the command `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` from the directory the file is in, and remember to change `zzz` with your username. Then you should be asked for your password
+After have the file saved, enter the command `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` from the directory the file is in, and remember to change `zzz` with your username. Then you would be asked for your password to log into the remote computer. If every step is completed successfully, you should see the file in the directory with `ls` command and run the file with `java` or `javac` commands like the image below shown.
+
 ![Image](Screenshot%2022-04-18%222655.png)
 
 ***
 ## Setting an SSH Key
+Having to retype your password everytime you log in is ineffcient and annoying, so we would make the system to "remember you".
+First, enter the command `ssh-keygen` in the terminal, you should get something similar like this:
+> Generating public/private rsa key pair.  
+>Enter file in which to save the key   
+> (/Users/user-name/.ssh/id_rsa): /Users/user-name/.ssh/id_rsa   
+>Enter passphrase (empty for no passphrase): 
+
+Then just hit the enter key, you should get something like this:
+Enter same passphrase again: 
+>Your identification has been saved in /Users/<user-name>/.ssh/id_rsa.   
+>
+>Your public key has been saved in /Users/<user-name>/.ssh/id_rsa.pub.
+>
+>The key fingerprint is:   
+SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0 
+ <user-name>@<system>.local  
+>
+>The key's randomart image is:  
++---[RSA 3072]----+   
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;. . + .&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|   
+|      . . B o .  |   
+|     . . B * +.. |   
+|      o S = *.B. |   
+|       = = O.*.*+|   
+|        + * *.BE+|   
+|           +.+.o |   
+|             ..  |   
++----[SHA256]-----+   
+
+
 ***
 ## Optimizing Remote Running
 
