@@ -94,3 +94,6 @@ It means that now you have both the publich and private keys stored in the .ssh 
 ## Optimizing Remote Running
 There are some other ways to make the process more efficient.
 For example, you can run a command directly on the remote computer by putting a command in quates like `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`. You can also run several commands all at once by using semicolons, like `cp WhereAmI.java OtherMain.java; javac OtherMain.java; java WhereAmI`. Also, instead of copypasting manually the command you just ran, you can click the up-arrow button to easily recall the previously commands. 
+
+> Using semicolons to run multiple commands.
+> ![Image](Screenshot%202022-04-18%20233849.png)
