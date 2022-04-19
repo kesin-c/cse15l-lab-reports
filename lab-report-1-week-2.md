@@ -1,7 +1,7 @@
 # **Lab Report 1**
 ***
 ## Installing VScode
-<p>To download VScode, you would need to go to their [website](https://code.visualstudio.com/download) where you would choose one to download based on the operating system of your computer. After it is downloaded, run the installer and follow the steps on it, you should be set when the process is over.</p>
+To download VScode, you would need to go to their [website](https://code.visualstudio.com/download) where you would choose one to download based on the operating system of your computer. After it is downloaded, run the installer and follow the steps on it, you should be set when the process is over.
 
 ![Image](Screenshot%202022-04-17%20230823.png)
 
@@ -75,6 +75,7 @@ SHA256:jZaZH6fI8E2I1D35hnvGeBePQ4ELOf2Ge+G0XknoXp0
 |             ..  |   
 +----[SHA256]-----+   
 
+It means that now you have both the publich and private keys stored in the .ssh directory.
 
 ***
 ## Optimizing Remote Running
