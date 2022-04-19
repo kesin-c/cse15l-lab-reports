@@ -12,6 +12,7 @@ Now that you have VScode installed, open a terminal by pressing ``Ctrl + ` ``, t
 > Message you should get when you are successfully logged in. 
 >
 > ![Image](Screenshot%202022-04-17%20233143.png)
+
 ***
 ## Trying Some Commands
 Now that you are connected to a remote computer, you can now run some commands on both your own computer and the remote computer. Below are some useful ones for you to try:
